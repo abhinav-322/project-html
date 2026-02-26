@@ -3,183 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delicious Indian Foods</title>
+    <title>Vibrant and Colorful Page</title>
     <style>
         /* Global Styles */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
+            background-color: #f0f8ff;
             color: #333;
             text-align: center;
         }
 
-        header {
-            background-color: #2c3e50;
-            color: #fff;
-            padding: 40px 20px;
-            font-size: 3em;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-bottom: 40px;
+        h1, h2, h3, p {
+            text-align: center;
         }
 
-        header span {
-            color: #e74c3c;
+        h1 {
+            font-size: 3.5em;
+            color: #ff6347;
+            margin-top: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         h2 {
             font-size: 2.5em;
-            color: #16a085;
-            margin-top: 30px;
-            text-transform: uppercase;
+            color: #ff1493;
+            margin-top: 20px;
         }
 
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 0 20px;
+        h3 {
+            font-size: 2em;
+            color: #20b2aa;
+            margin-top: 10px;
         }
 
-        .food-card {
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            margin: 20px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .food-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
-        }
-
-        .food-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-top-left-radius: 12px;
-            border-top-right-radius: 12px;
-        }
-
-        .food-card h3 {
-            font-size: 1.8em;
-            color: #e74c3c;
-            margin: 20px 0;
-        }
-
-        .food-card p {
+        p {
             font-size: 1.1em;
             line-height: 1.6;
-            color: #555;
-            padding: 0 20px;
-            margin-bottom: 20px;
+            color: #696969;
+            padding: 10px 20px;
         }
 
-        .food-card .button {
+        /* Colorful Section Styling */
+        .section {
+            padding: 60px 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-1 {
+            background-color: #ff7f50;
+            color: white;
+        }
+
+        .section-2 {
+            background-color: #98fb98;
+            color: #2e8b57;
+        }
+
+        .section-3 {
+            background-color: #f0e68c;
+            color: #ff8c00;
+        }
+
+        .section-4 {
+            background-color: #add8e6;
+            color: #4682b4;
+        }
+
+        .section-5 {
+            background-color: #ffb6c1;
+            color: #c71585;
+        }
+
+        /* Hover effects */
+        .section:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Button Styles */
+        .button {
             display: inline-block;
-            padding: 12px 25px;
-            background-color: #16a085;
-            color: #fff;
+            padding: 15px 30px;
+            margin-top: 20px;
+            background-color: #ff6347;
+            color: white;
+            font-size: 1.2em;
             text-decoration: none;
-            font-size: 1.1em;
-            border-radius: 5px;
-            margin-bottom: 20px;
+            border-radius: 50px;
             transition: background-color 0.3s ease;
         }
 
-        .food-card .button:hover {
-            background-color: #1abc9c;
+        .button:hover {
+            background-color: #ff4500;
         }
 
-        footer {
-            background-color: #34495e;
-            color: #fff;
-            padding: 30px 20px;
-            margin-top: 40px;
-            font-size: 1.1em;
-            text-align: center;
-        }
-
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .container {
-                width: 90%;
+            .section {
+                padding: 40px 20px;
             }
 
-            .food-card {
-                width: 100%;
-                margin: 20px 0;
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            h3 {
+                font-size: 1.5em;
+            }
+
+            .button {
+                font-size: 1em;
             }
         }
+
     </style>
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        Explore <span>Delicious</span> Indian Foods
-    </header>
+    <!-- Main Header -->
+    <h1>Welcome to the Vibrant World of Colors</h1>
 
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Food Card 1 -->
-        <div class="food-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Butter_chicken.jpg" alt="Butter Chicken">
-            <h3>Butter Chicken</h3>
-            <p>Butter Chicken, or Murgh Makhani, is a North Indian dish made with tender chicken cooked in a creamy, spiced tomato sauce. It’s a rich and flavorful dish loved by many!</p>
-            <a href="#" class="button">Learn More</a>
-        </div>
-
-        <!-- Food Card 2 -->
-        <div class="food-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Dosa_with_sambar.jpg" alt="Dosas">
-            <h3>Dosas</h3>
-            <p>Dosas are thin, crispy crepes made from fermented rice and lentil batter. Often served with chutneys and sambar, they are a popular breakfast dish in South India.</p>
-            <a href="#" class="button">Learn More</a>
-        </div>
-
-        <!-- Food Card 3 -->
-        <div class="food-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Biryani_Hyderabadi.jpg" alt="Biryani">
-            <h3>Biryani</h3>
-            <p>Biryani is a flavorful and aromatic rice dish made with basmati rice, spices, and marinated chicken, mutton, or vegetables. It's a regal feast of flavors that’s popular across India.</p>
-            <a href="#" class="button">Learn More</a>
-        </div>
-
-        <!-- Food Card 4 -->
-        <div class="food-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Chole_bhature.jpg" alt="Chole Bhature">
-            <h3>Chole Bhature</h3>
-            <p>Chole Bhature is a North Indian delight featuring spicy chickpea curry (chole) paired with fried bread (bhature). It’s a hearty and flavorful combination that’s loved by many!</p>
-            <a href="#" class="button">Learn More</a>
-        </div>
-
-        <!-- Food Card 5 -->
-        <div class="food-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Idli_sambar.JPG" alt="Idli Sambar">
-            <h3>Idli Sambar</h3>
-            <p>Idli is a steamed rice cake served with spicy sambar and coconut chutney. It’s a light yet fulfilling South Indian dish, typically eaten for breakfast or dinner.</p>
-            <a href="#" class="button">Learn More</a>
-        </div>
-
-        <!-- Food Card 6 -->
-        <div class="food-card">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Tandoori_Chicken.jpg" alt="Tandoori Chicken">
-            <h3>Tandoori Chicken</h3>
-            <p>Tandoori Chicken is marinated in yogurt and spices, then cooked in a traditional clay oven (tandoor). This dish is smoky, flavorful, and perfect for grilling enthusiasts!</p>
-            <a href="#" class="button">Learn More</a>
-        </div>
+    <!-- Section 1 -->
+    <div class="section section-1">
+        <h2>Bright and Bold</h2>
+        <p>This section features an exciting mix of bold colors that really pop! Colors can express so many emotions and bring energy to your day!</p>
+        <a href="#" class="button">Learn More</a>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>Indian cuisine offers a rich diversity of flavors. From spicy curries to crispy snacks, every dish tells a story of tradition, culture, and creativity.</p>
-    </footer>
+    <!-- Section 2 -->
+    <div class="section section-2">
+        <h2>Fresh and Lively</h2>
+        <p>Green is often associated with freshness and nature. This section brings the calming and rejuvenating shades of green to create a peaceful vibe.</p>
+        <a href="#" class="button">Explore More</a>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section section-3">
+        <h2>Sunny and Cheerful</h2>
+        <p>Yellow brings optimism and energy! This section is here to brighten your mood with its sunny, warm tones and make everything feel a bit more positive.</p>
+        <a href="#" class="button">See the Sunshine</a>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section section-4">
+        <h2>Calm and Cool</h2>
+        <p>Soft blues bring calmness and tranquility. This section reflects the cool and calming shades of blue, providing a peaceful experience.</p>
+        <a href="#" class="button">Dive In</a>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="section section-5">
+        <h2>Romantic and Warm</h2>
+        <p>Pink is often seen as a soft, romantic color. This section has a sweet and warm feel, bringing a sense of affection and charm to the page.</p>
+        <a href="#" class="button">Feel the Love</a>
+    </div>
 
 </body>
 </html>
