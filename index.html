@@ -3,80 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motivational Message</title>
+    <title>Colorful Motivational Page</title>
     <style>
+        /* Global Styles */
         body {
             margin: 0;
             padding: 0;
-            height: 100vh;
-            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            font-family: 'Arial', sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            justify-content: center;
+            height: 100vh;
         }
 
-        .container {
-            background-color: white;
-            padding: 50px;
-            border-radius: 15px;
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        h1, h2, h3 {
+            font-family: 'Arial', sans-serif;
             text-align: center;
-            max-width: 600px;
+        }
+
+        /* Section Styles */
+        .section {
             width: 90%;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .container:hover {
-            transform: scale(1.05);
-            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
-        }
-
-        h1 {
-            font-size: 3em;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        p {
-            font-size: 1.3em;
-            color: #34495e;
-            line-height: 1.8;
+            max-width: 800px;
+            padding: 40px;
             margin-bottom: 30px;
-            transition: color 0.3s ease;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background-color: #fff;
+            animation: fadeIn 1s ease-out;
         }
 
-        p:hover {
+        /* Header Styles */
+        h1 {
+            font-size: 3.5em;
             color: #e74c3c;
+            text-transform: uppercase;
+            margin-bottom: 20px;
         }
 
-        .quote {
-            font-size: 1.5em;
-            font-style: italic;
+        h2 {
+            font-size: 2.5em;
             color: #16a085;
-            margin-top: 20px;
-            opacity: 0;
-            animation: fadeIn 2s ease-out forwards;
+            margin-bottom: 15px;
         }
 
+        h3 {
+            font-size: 2em;
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+
+        /* Paragraph Styles */
+        p {
+            font-size: 1.2em;
+            color: #34495e;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Colorful Backgrounds for Sections */
+        .section-1 {
+            background-color: #ffeb3b;
+        }
+
+        .section-2 {
+            background-color: #8e44ad;
+        }
+
+        .section-3 {
+            background-color: #1abc9c;
+        }
+
+        .section-4 {
+            background-color: #f39c12;
+        }
+
+        /* Hover Effects */
+        .section:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        /* Fade-in Animation */
         @keyframes fadeIn {
             from {
                 opacity: 0;
+                transform: translateY(30px);
             }
             to {
                 opacity: 1;
+                transform: translateY(0);
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Embrace Today</h1>
-        <p>Each day brings a fresh start, a new opportunity to make your dreams a reality. Push forward, challenge yourself, and take the first step towards your goals.</p>
-        <p class="quote">"The only limit to our realization of tomorrow is our doubts of today." – Franklin D. Roosevelt</p>
+    <!-- Section 1: Main Message -->
+    <div class="section section-1">
+        <h1>Start Your Journey</h1>
+        <p>Every day is a new opportunity to grow, learn, and make an impact. Take that first step, and remember that your potential is limitless!</p>
+    </div>
+
+    <!-- Section 2: Quote -->
+    <div class="section section-2">
+        <h2>Quote of the Day</h2>
+        <p>"The best way to predict the future is to create it." – Abraham Lincoln</p>
+    </div>
+
+    <!-- Section 3: Motivation -->
+    <div class="section section-3">
+        <h3>Keep Pushing Forward</h3>
+        <p>Even when things get tough, keep going. Every challenge is an opportunity for growth. Stay focused and trust the process!</p>
+    </div>
+
+    <!-- Section 4: Final Thought -->
+    <div class="section section-4">
+        <h3>Believe in Yourself</h3>
+        <p>Self-belief is the key to unlocking your dreams. Trust in your abilities, take action, and watch your future unfold in amazing ways.</p>
     </div>
 </body>
 </html>
