@@ -5,27 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delicious Indian Foods</title>
     <style>
+        /* Global Styles */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
+            background-color: #f8f8f8;
             color: #333;
             text-align: center;
         }
 
         header {
-            background-color: #d35400;
+            background-color: #2c3e50;
             color: #fff;
-            padding: 30px;
-            font-size: 2.5em;
+            padding: 40px 20px;
+            font-size: 3em;
             text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 40px;
+        }
+
+        header span {
+            color: #e74c3c;
         }
 
         h2 {
-            font-size: 2.2em;
+            font-size: 2.5em;
             color: #16a085;
             margin-top: 30px;
+            text-transform: uppercase;
         }
 
         .container {
@@ -33,50 +41,53 @@
             margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
+            justify-content: center;
+            padding: 0 20px;
         }
 
         .food-card {
             background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            width: 280px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 300px;
             margin: 20px;
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .food-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
         }
 
         .food-card img {
             width: 100%;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
         }
 
         .food-card h3 {
             font-size: 1.8em;
             color: #e74c3c;
-            margin: 15px 0;
+            margin: 20px 0;
         }
 
         .food-card p {
             font-size: 1.1em;
-            line-height: 1.5;
-            padding: 0 15px;
-            margin-bottom: 20px;
+            line-height: 1.6;
             color: #555;
+            padding: 0 20px;
+            margin-bottom: 20px;
         }
 
         .food-card .button {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 25px;
             background-color: #16a085;
             color: #fff;
             text-decoration: none;
+            font-size: 1.1em;
             border-radius: 5px;
             margin-bottom: 20px;
             transition: background-color 0.3s ease;
@@ -89,74 +100,85 @@
         footer {
             background-color: #34495e;
             color: #fff;
-            padding: 20px;
+            padding: 30px 20px;
             margin-top: 40px;
             font-size: 1.1em;
+            text-align: center;
         }
 
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            .food-card {
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
     </style>
 </head>
 <body>
 
     <!-- Header -->
     <header>
-        Discover Delicious Indian Foods
+        Explore <span>Delicious</span> Indian Foods
     </header>
 
     <!-- Main Content -->
     <div class="container">
         <!-- Food Card 1 -->
         <div class="food-card">
-            <img src="https://via.placeholder.com/280x200.png?text=Butter+Chicken" alt="Butter Chicken">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Butter_chicken.jpg" alt="Butter Chicken">
             <h3>Butter Chicken</h3>
-            <p>Butter Chicken, or Murgh Makhani, is a North Indian dish made with chicken cooked in a creamy, spiced tomato sauce. It’s rich, flavorful, and a must-try for spice lovers!</p>
+            <p>Butter Chicken, or Murgh Makhani, is a North Indian dish made with tender chicken cooked in a creamy, spiced tomato sauce. It’s a rich and flavorful dish loved by many!</p>
             <a href="#" class="button">Learn More</a>
         </div>
 
         <!-- Food Card 2 -->
         <div class="food-card">
-            <img src="https://via.placeholder.com/280x200.png?text=Dosas" alt="Dosas">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Dosa_with_sambar.jpg" alt="Dosas">
             <h3>Dosas</h3>
-            <p>Dosas are crispy South Indian pancakes made from fermented rice and lentil batter. They are often served with chutneys and sambar for a savory meal.</p>
+            <p>Dosas are thin, crispy crepes made from fermented rice and lentil batter. Often served with chutneys and sambar, they are a popular breakfast dish in South India.</p>
             <a href="#" class="button">Learn More</a>
         </div>
 
         <!-- Food Card 3 -->
         <div class="food-card">
-            <img src="https://via.placeholder.com/280x200.png?text=Biryani" alt="Biryani">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Biryani_Hyderabadi.jpg" alt="Biryani">
             <h3>Biryani</h3>
-            <p>Biryani is a flavorful rice dish made with basmati rice, spices, and either chicken, mutton, or vegetables. It’s a festive dish loved by many!</p>
+            <p>Biryani is a flavorful and aromatic rice dish made with basmati rice, spices, and marinated chicken, mutton, or vegetables. It's a regal feast of flavors that’s popular across India.</p>
             <a href="#" class="button">Learn More</a>
         </div>
 
         <!-- Food Card 4 -->
         <div class="food-card">
-            <img src="https://via.placeholder.com/280x200.png?text=Chole+Bhature" alt="Chole Bhature">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Chole_bhature.jpg" alt="Chole Bhature">
             <h3>Chole Bhature</h3>
-            <p>Chole Bhature is a popular North Indian dish consisting of spicy chickpea curry (chole) paired with deep-fried bread (bhature). It’s a delightful combination of flavors.</p>
+            <p>Chole Bhature is a North Indian delight featuring spicy chickpea curry (chole) paired with fried bread (bhature). It’s a hearty and flavorful combination that’s loved by many!</p>
             <a href="#" class="button">Learn More</a>
         </div>
 
         <!-- Food Card 5 -->
         <div class="food-card">
-            <img src="https://via.placeholder.com/280x200.png?text=Idli+Sambar" alt="Idli Sambar">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Idli_sambar.JPG" alt="Idli Sambar">
             <h3>Idli Sambar</h3>
-            <p>Idli is a steamed rice cake often served with spicy sambar (lentil soup) and coconut chutney. It’s a light yet satisfying South Indian breakfast favorite.</p>
+            <p>Idli is a steamed rice cake served with spicy sambar and coconut chutney. It’s a light yet fulfilling South Indian dish, typically eaten for breakfast or dinner.</p>
             <a href="#" class="button">Learn More</a>
         </div>
 
         <!-- Food Card 6 -->
         <div class="food-card">
-            <img src="https://via.placeholder.com/280x200.png?text=Tandoori+Chicken" alt="Tandoori Chicken">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Tandoori_Chicken.jpg" alt="Tandoori Chicken">
             <h3>Tandoori Chicken</h3>
-            <p>Tandoori Chicken is marinated chicken cooked in a traditional clay oven called a tandoor. It’s smoky, spicy, and a favorite among grill lovers!</p>
+            <p>Tandoori Chicken is marinated in yogurt and spices, then cooked in a traditional clay oven (tandoor). This dish is smoky, flavorful, and perfect for grilling enthusiasts!</p>
             <a href="#" class="button">Learn More</a>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>Explore the diverse and rich food culture of India, where every region offers a unique flavor! From street food to royal delicacies, there's something for everyone.</p>
+        <p>Indian cuisine offers a rich diversity of flavors. From spicy curries to crispy snacks, every dish tells a story of tradition, culture, and creativity.</p>
     </footer>
 
 </body>
